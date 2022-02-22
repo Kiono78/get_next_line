@@ -1,4 +1,4 @@
-# GET_NEXT_LINE - Reading a line from a fd is way too tedious
+# GNL - Reading a line from a fd is way too tedious
 ### 42 Lyon 2021
 
 ## Subject
@@ -28,15 +28,15 @@ By default, a read buffer size of 7 is defined in the .h files. But users can fr
 
 Without overwriting buffer size:
 
-'''shell
+```shell
 gcc -Wall -Wextra -Werror get_next_line.c get_next_line_utils.c main.c
-'''
+```
 
 With modifiying the read size:
 
-'''shell
+```shell
 gcc -Wall -Wextra -Werror -D BUFFER_SIZE=10000 get_next_line.c get_next_line_utils.c main.c
-'''
+```
 
 Same logic applies to bonus files
 
